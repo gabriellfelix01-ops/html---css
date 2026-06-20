@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div{
+            color: white;
+            background-color: black;
+            text-align: center;
+            font-weight: bold;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        div:hover > p{
+            display: block;
+            background-color: rgb(245, 16, 16);
+
+        }
+        div > p{
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <h2>Subtítulo</h2>
+    <div>Neymar Jr
+        <p>Acertou</p>
+    </div>
+    <div>C. Ronaldo
+        <p>Errou</p>
+    </div>
+    <div>L. Messi
+        <p>Errou</p>
+    </div>
+    
+</body>
+</html>
