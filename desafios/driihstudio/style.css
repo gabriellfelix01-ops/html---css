@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Tangerine:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+:root{
+    --fonte01: "Tangerine";
+    --fonte02: "Archivo Black";
+    --fonte03: "Story Script"
+
+}
+
+:root{
+    --cor01: #3d2014;
+    --cor02: #462c13;
+    --cor03: #5f3a18;
+    --cor03: #965f29;
+    --cor03: #df9143;
+}
+*{
+    height: 0 auto;
+    width: 0 auto;
+    margin: auto;
+}
+body{
+    background-color: #8b5623d3;
+}
+header{
+    background-image: linear-gradient(#3d2014, #462c13, Black);
+    width: 100%;
+    height: 130px;  
+}
+
+header > h1{
+    color: antiquewhite;
+    font-family: var(--fonte03);
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.726);
+    font-size: 2.3em;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+header > p{
+    text-align: center;
+    color: antiquewhite;
+    font-family: var(--fonte01);
+    font-size: 1.8em;
+     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.726);
+}
