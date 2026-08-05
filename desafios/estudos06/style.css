@@ -1,0 +1,48 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+section{
+    min-height: 400px;
+    max-width: 60vw;
+
+}
+p{
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+.normal{
+    background-color: bisque;
+}
+
+.efeito{
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    background-attachment: fixed;
+    background-position: right center;
+    
+}
+.efeito#um{
+
+    background-image: url(imagens/background001.jpg);
+
+}
+.efeito#dois{
+    background-image: url(imagens/background002.jpg);
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

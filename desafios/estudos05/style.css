@@ -74,6 +74,7 @@ header button{
 button:hover{
     transform: translateY(-10px);
     border: 1px solid black;
+    cursor: pointer;
 }
 
 .main{
@@ -187,3 +188,4 @@ main{
     height: auto;
     width: 500px;
 }
+
