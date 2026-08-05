@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <link rel="stylesheet" href="styles02.css">
+</head>
+<body>
+    <h1>Criando tabelas grandes</h1>
+    <!--
+    Anatomia para tabelas Grandes
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th id="id">ID</th>
+                <th>Nome</th>
+                <th>Estado civil</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="id">1</td>
+                <td>Gabriell</td>
+                <td>Casado</td>
+            </tr>
+            <tr>
+                <td id="id">2</td>
+                <td>Adrielly</td>
+                <td>Casada</td>
+            </tr>
+            <tr>
+                <td id="id">3</td>
+                <td>Beatriz</td>
+                <td>Solteira</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td id="id">-</td>
+            <th>Total de casados</th>
+            <td class="resultado"><strong>2</strong></td>
+        </tfoot>
+    </table>
+
+    
+</body>
+</html>
