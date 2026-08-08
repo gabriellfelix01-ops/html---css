@@ -11,6 +11,7 @@
     <!--
     Anatomia para tabelas Grandes
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -19,11 +20,12 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Teste de Caption</caption>
         <thead>
             <tr>
-                <th id="id">ID</th>
-                <th>Nome</th>
-                <th>Estado civil</th>
+                <th scope="col" "id">ID</th>
+                <th scope="col" >Nome</th>
+                <th scope="col" >Estado civil</th>
             </tr>
         </thead>
         <tbody>
@@ -42,13 +44,32 @@
                 <td>Beatriz</td>
                 <td>Solteira</td>
             </tr>
+            <tr>
+                <td id="id">4</td>
+                <td>Dalisson</td>
+                <td>Casado</td>
+            </tr>
+            <tr>
+                <td id="id">5</td>
+                <td>Rony</td>
+                <td>Solteiro</td>
+            </tr>
+            <tr>
+                <td id="id">6</td>
+                <td>Bia</td>
+                <td>Casada</td>
+            </tr>
         </tbody>
         <tfoot>
             <td id="id">-</td>
-            <th>Total de casados</th>
-            <td class="resultado"><strong>2</strong></td>
+            <th scope="row">Total de casados</th>
+            <td class="resultado"><strong>4</strong></td>
         </tfoot>
     </table>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius libero eveniet totam accusamus saepe pariatur eos exercitationem quasi voluptate vel, aliquid sapiente earum, est praesentium maiores obcaecati nulla quas natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsam dolorum perspiciatis nisi laborum id, maxime repudiandae optio ut sint soluta quae quia deserunt veniam deleniti expedita sunt quaerat tenetur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque velit explicabo porro eaque. Fugit alias debitis corporis molestias sed quia quaerat cumque assumenda. Repudiandae, fugit eligendi enim eum blanditiis architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eius illum animi veniam deleniti esse assumenda, dolor sed, praesentium, deserunt laudantium blanditiis quae vero nemo rem provident minima molestiae! Quaerat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius libero eveniet totam accusamus saepe pariatur eos exercitationem quasi voluptate vel, aliquid sapiente earum, est praesentium maiores obcaecati nulla quas natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ipsam dolorum perspiciatis nisi laborum id, maxime repudiandae optio ut sint soluta quae quia deserunt veniam deleniti expedita sunt quaerat tenetur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque velit explicabo porro eaque. Fugit alias debitis corporis molestias sed quia quaerat cumque assumenda. Repudiandae, fugit eligendi enim eum blanditiis architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eius illum animi veniam deleniti esse assumenda, dolor sed, praesentium, deserunt laudantium blanditiis quae vero nemo rem provident minima molestiae! Quaerat!</p>
+    </div>
 
     
 </body>
