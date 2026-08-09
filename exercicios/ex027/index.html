@@ -6,26 +6,24 @@
     <title>Formulário</title>
 </head>
 <body>
+    <h1>Aprendendo formulários</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
 
-        <p><label for="IdUsuário">Usuário:</label> <input type="text" name="Usuário" id="IdUsuário" required minlength="5" maxlength="15" size="10" placeholder="Digite" autocomplete="username"></p>
-
-        <p><label for="IdSenha">Senha:</label> <input type="password" name="Senha" id="IdSenha" required minlength="6" maxlength="10" size="8" placeholder="Digite" autocomplete="current-password"></p>
-
-        <p><label for="IdNota">Nota: </label><input type="number" name="Nota" id="IdNota" placeholder="Digite" min="0" max="10" required step="0.5"></p>
-
-        <p><label for="IdMês">Periodo Letívo </label><input type="month" name="Mês" id="IdMês"></p>
-
-        <p><label for="IdDia">Dia</label> <input type="date" name="Dia" id="IdDia"></p>
-
-        <p>Hora <input type="time" name="Hora" id="IdHora"></p>
-
-        <p>Data e Hora <input type="datetime" name="Dataehora" id="IdDataehora"></p>
+        <fieldset>
+            <legend>Preencha os campos abaixo</legend>
+            <p><label for="IdUsuário">Usuário:</label> <input type="text" name="Usuário" id="IdUsuário" required minlength="5" maxlength="15" size="10" placeholder="Digite" autocomplete="username"></p>
+            <p><label for="IdSenha">Senha:</label> <input type="password" name="Senha" id="IdSenha" required minlength="6" maxlength="10" size="8" placeholder="Digite" autocomplete="current-password"></p>
+            <p><label for="IdNota">Nota: </label><input type="number" name="Nota" id="IdNota" placeholder="Digite" min="0" max="10" required step="0.5"></p>
+            <p><label for="IdMês">Periodo Letívo </label><input type="month" name="Mês" id="IdMês"></p>
+            <p><label for="IdDia">Dia</label> <input type="date" name="Dia" id="IdDia"></p>
+            <p><label for="IdHora">Hora </label><input type="time" name="Hora" id="IdHora"></p>
+            <p><label for="IdDataehora">Data e Hora</label> <input type="datetime" name="Dataehora" id="IdDataehora"></p>
+        </fieldset>
 
 
 
 
-        <input type="submit" value="Enviar"> 
+        <input type="submit" value="Enviar" style="margin-top: 10px;"> 
         <input type="reset" value="Limpar">
 
 
