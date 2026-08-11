@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Select Datalist e Textarea</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+
+        <label for="idtime">Times</label>
+        <select name="time" id="idtime">
+            <option value="" selected>escolha...</option>
+            <optgroup label="mundial">
+                <option value="sp">são paulo</option>
+                <option value="sfc">santos</option>
+                <option value="sccp">corinthians</option>
+            </optgroup>
+            <optgroup label="sem mundial">
+                <option value="sep">palmeiras</option>
+
+            </optgroup>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="idprofissão"> Profissão
+            <input Time type="text" name="profissão" id="idprofissão" list="profissão" placeholder="Digite">
+            <datalist id="profissão">
+                <option value="Desenvolvedor">Desenvolvedor</option>
+                <option value="Administração">Administração</option>
+                <option value="Médico">Médico</option>
+                <option value="Carpinteiro">Carpinteiro</option>
+            </datalist>
+
+        </label>
+
+        <br>
+        <br>
+
+        <label for="msg">Mensagem
+            <br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite aqui..."></textarea>
+        </label>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+
+
+
+    </form>
+
+
+
+
+
+
+</body>
+</html>
