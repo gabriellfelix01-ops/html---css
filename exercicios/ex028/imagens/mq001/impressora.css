@@ -1,0 +1,45 @@
+
+/* --- CONFIGURAÇÕES GERAIS --- */
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* --- CABEÇALHO --- */
+header{
+    display: flex;
+    height: 150px;
+    width: 100vw;
+    background-color: lightgray;
+    justify-content: space-between;
+    padding: 10px;
+}
+h1{
+    display: flex;
+    align-items: center;
+}
+
+menu{
+    display: none;
+}
+
+
+/* --- PÁGINA PRINCIPAL --- */
+article{
+    display: flex;
+    margin: 0 auto;
+    width: 60vw;
+    background-color: blue;
+}
+article p{
+    text-align: center;
+    color: white;
+    padding: 10px;
+
+}
+
+article::after{
+    content: 'Esse article foi impresso através do dev Gabriell Félix França';
+}
