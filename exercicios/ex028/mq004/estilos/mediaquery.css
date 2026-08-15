@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/*
+ - TYPICAL DEVICE BREAKPOINTS 2026 --- 
+ 
+ PEQUENOS CELULAR - MAX 480
+ CELULARES - MIN 481 / MAX 767
+ GRANDES CELULARES - MIN 768 / MAX 1023
+ NOTEBOOK - MIN 1024 / MAX 1279
+ DESKTOP - MIN 1280 / MAX 1439
+ GRANDES TELAS - +1440px
+
+*/
+
+@media print {
+    #smartphone{display: none;}
+    #desktop{display: none;}
+    #impressora{display: block;}
+    #tablet{display: none;}
+    #tv{display: none;}
+    body{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h1{
+        text-shadow: none;
+        color: black;
+        font-size: bolder;
+    }
+    main{
+        border: 2px solid black;
+    }
+    main::after{
+        content: "Essa impressão foi feita pelo estudante Gabriell Félix França";
+        text-decoration: overline;
+    }
+
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #smartphone{display: none;}
+    #desktop{display: none;}
+    #impressora{display: none;}
+    #tablet{display: block;}
+    #tv{display: none;}
+
+    
+}
+
+/* Notebook */
+@media screen and (min-width: 1024px) and (max-width: 1279px) 
+{
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #smartphone{display: none;}
+    #desktop{display: block;}
+    #impressora{display: none;}
+    #tablet{display: none;}
+    #tv{display: none;}
+
+    
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #smartphone{display: none;}
+    #desktop{display: none;}
+    #impressora{display: none;}
+    #tablet{display: none;}
+    #tv{display: block;}
+}
+
+

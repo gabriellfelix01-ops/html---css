@@ -1,0 +1,84 @@
+/* --Configurações Gerais--*/
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    background-color: #cecaca;
+}
+
+/* -- Configurações Cabeçalho-- */
+header{
+    background-color: #928e8e;
+    border-bottom: 1px solid #928e8e;
+}
+h1{
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+}
+
+header ul {
+    background-color: #636060;
+    display: none;
+    margin: auto;
+}
+header li{
+    padding: 10px;
+    border-top: 1px solid white;
+    text-align: center;
+}
+header a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    
+}
+header li:hover{
+    background-color: #cecaca;
+}
+
+#menu{
+    display: block;
+    width: 100vw;
+    background-color: #413f3f;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+#menu:hover{
+    background-color: #636060;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* --Configurações Main Principal-- */
+main{
+    background-color: white;
+    border-top: 1px solid black;
+    display: block;
+    margin: auto;
+    width: 90vw;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+main h2{
+    text-align: center;
+    padding: 5px;
+    text-shadow: 1px 1px 3px #928e8e ;
+}
+main p{
+    text-align: justify;
+    text-indent: 20px;
+}
