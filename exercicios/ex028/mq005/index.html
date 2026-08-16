@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <title>Menu Responsivo</title>
 </head>
-<body>
+
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu Site</h1>
         <button id="menu" onclick="clickmenu()">
             <span class="material-symbols-outlined">
-            menu
+                menu
             </span>
         </button>
         <ul id="itensmenu">
@@ -27,22 +31,43 @@
     <main>
         <h2>Testando Media Queries</h2>
         <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illum placeat magni fugit, maiores harum voluptas atque rerum fuga? Non doloremque sit inventore maxime aut, laboriosam laudantium debitis ea maiores? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, magni corporis, asperiores harum accusantium illum possimus quaerat cumque molestiae dolorem error sunt reprehenderit. Dolorem id sit harum vitae doloremque neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quisquam repudiandae vitae, deserunt quam quas doloribus, commodi maxime autem molestiae sit ipsa enim, reprehenderit vero iusto porro nemo? Repellat, fugiat.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ullam, recusandae amet quaerat obcaecati error repellat vel saepe ut fugiat libero quos laboriosam, laudantium dicta temporibus architecto quibusdam placeat blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eum voluptates voluptas! Facilis quaerat autem laudantium est qui cum dicta voluptate, aspernatur id architecto laboriosam sit, at ut, accusantium officia.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil omnis sapiente consequuntur ipsam fugiat veritatis natus, error harum expedita minus, animi et veniam at? Dolores facilis nihil voluptates provident doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum earum aliquid cumque exercitationem obcaecati culpa reprehenderit aut reiciendis quos veniam esse illo officiis fuga ipsa quasi, assumenda numquam a voluptas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illum placeat magni fugit, maiores harum
+                voluptas atque rerum fuga? Non doloremque sit inventore maxime aut, laboriosam laudantium debitis ea
+                maiores? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, magni corporis, asperiores
+                harum accusantium illum possimus quaerat cumque molestiae dolorem error sunt reprehenderit. Dolorem id
+                sit harum vitae doloremque neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                quisquam repudiandae vitae, deserunt quam quas doloribus, commodi maxime autem molestiae sit ipsa enim,
+                reprehenderit vero iusto porro nemo? Repellat, fugiat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ullam, recusandae amet quaerat
+                obcaecati error repellat vel saepe ut fugiat libero quos laboriosam, laudantium dicta temporibus
+                architecto quibusdam placeat blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis eum voluptates voluptas! Facilis quaerat autem laudantium est qui cum dicta voluptate,
+                aspernatur id architecto laboriosam sit, at ut, accusantium officia.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil omnis sapiente consequuntur ipsam fugiat
+                veritatis natus, error harum expedita minus, animi et veniam at? Dolores facilis nihil voluptates
+                provident doloribus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum earum aliquid
+                cumque exercitationem obcaecati culpa reprehenderit aut reiciendis quos veniam esse illo officiis fuga
+                ipsa quasi, assumenda numquam a voluptas.</p>
         </article>
     </main>
     <script>
-        function clickmenu(){
-            if (itensmenu.style.display == 'block'){
+        function clickmenu() {
+            if (itensmenu.style.display == 'block') {
                 itensmenu.style.display = 'none'
             }
             else {
                 itensmenu.style.display = 'block'
             }
         }
-        
+        function mudoutamanho() {
+            if (window.innerWidth >= 768) {itensmenu.style.display = 'flex'}
+            else {
+                itensmenu.style.display = 'none'
+            }
+        }
+
     </script>
-    
+
 </body>
+
 </html>

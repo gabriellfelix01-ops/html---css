@@ -1,25 +1,29 @@
 /* --Configurações Gerais--*/
 @charset "UTF-8";
-*{
+
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-html{
-    height: 100vh;
-    width: 100vw;
+
+html {
+    height: 100%;
+    width: 100%;
 }
-body{
+
+body {
     background-color: #cecaca;
 }
 
 /* -- Configurações Cabeçalho-- */
-header{
+header {
     background-color: #928e8e;
     border-bottom: 1px solid #928e8e;
 }
-h1{
+
+h1 {
     padding: 10px;
     text-align: center;
     text-shadow: 1px 1px 1px white;
@@ -30,31 +34,35 @@ header ul {
     display: none;
     margin: auto;
 }
-header li{
+
+header li {
     padding: 10px;
     border-top: 1px solid white;
     text-align: center;
 }
-header a{
+
+header a {
     display: block;
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px 2px black;
-    
+
 }
-header li:hover{
+
+header li:hover {
     background-color: #cecaca;
 }
 
-#menu{
+#menu {
     display: block;
-    width: 100vw;
+    width: 100%;
     background-color: #413f3f;
     color: white;
     border: none;
     padding: 10px;
 }
-#menu:hover{
+
+#menu:hover {
     background-color: #636060;
     color: black;
     cursor: pointer;
@@ -62,7 +70,7 @@ header li:hover{
 
 
 /* --Configurações Main Principal-- */
-main{
+main {
     background-color: white;
     border-top: 1px solid black;
     display: block;
@@ -73,12 +81,14 @@ main{
     margin-top: 10px;
     padding: 10px;
 }
-main h2{
+
+main h2 {
     text-align: center;
     padding: 5px;
-    text-shadow: 1px 1px 3px #928e8e ;
+    text-shadow: 1px 1px 3px #928e8e;
 }
-main p{
+
+main p {
     text-align: justify;
     text-indent: 20px;
 }

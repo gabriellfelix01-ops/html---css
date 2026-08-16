@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*
+ - TYPICAL DEVICE BREAKPOINTS 2026 --- 
+ 
+ PEQUENOS CELULAR - MAX 480
+ CELULARES - MIN 481 / MAX 767
+ GRANDES CELULARES - MIN 768 / MAX 1023
+ NOTEBOOK - MIN 1024 / MAX 1279
+ DESKTOP - MIN 1280 / MAX 1439
+ GRANDES TELAS - +1440px
+
+*/
+
+/* ---------------------------- */
+/* CONFIGORAÇÕES MEDIA QUERIES*/
+/* ---------------------------- */
+
+@media screen and (min-width: 768px) {
+    /* -- MENU RESPONSIVO -- */
+    #menu{display: none;}
+    #itensmenu{display: flex;
+        justify-content: space-evenly;
+    }
+    #itensmenu li {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        border: 1px solid #00000044;
+        border-radius: 5px    
+    }
+
+    #itensmenu a{
+        display: flex;
+        text-decoration: none;
+    }   
+
+    /* -- MAIN RESPONSIVO -- */
+    main{
+        max-width: 768px;
+        font-size: 1.2em;
+    }
+}
+
+
+
