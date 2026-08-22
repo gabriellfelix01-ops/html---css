@@ -1,0 +1,12 @@
+@media screen and (max-width: 550px) {
+    .header-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-navegation ul{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}

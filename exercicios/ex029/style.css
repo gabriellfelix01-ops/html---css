@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 100vw;
+    background-color: darkgray;
+    flex-flow: row wrap;
+}
+.item1, .item2, .item3{
+    flex-basis: 300px;
+    flex-grow: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-weight: bolder;
+    
+    
+
+}
+.item1{
+    background-color: blue;
+    
+    border-radius: 5px;
+}
+.item2{
+    background-color: red;
+}
+.item3{
+    background-color: yellow;
+}
